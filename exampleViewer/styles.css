@@ -10,6 +10,10 @@ body {
   margin: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Center the title part of the page. */
 .centered {
   text-align: center;
