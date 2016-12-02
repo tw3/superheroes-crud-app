@@ -1,47 +1,47 @@
 (function($, _) {
-	var jqFullName, jqPhotoURL, jqCelebGrid, celebCardTemplateStr;
+	var jqFullName, jqPhotoURL, jqSuperheroGrid, superheroCardTemplateStr;
 
 	function init() {
 		// Cache stuff
 		var jqMainForm = $('div#main-content > form');
 		jqFullName = $('input[name="name"]', jqMainForm);
 		jqPhotoURL = $('input[name="photo_url"]', jqMainForm);
-		jqCelebGrid = $('.celeb-grid');
-		celebCardTemplateStr = $('#celebCardTemplate').html();
+		jqSuperheroGrid = $('.superhero-grid');
+		superheroCardTemplateStr = $('#superheroCardTemplate').html();
 
 		// Grab superhero data from the JSON file
-		$.getJSON("superheroes.json", function(celebDataArray) {
-			// Add all celebs from local data
-			$.each(celebDataArray, function(idx, celebData) { // If celebDataArray is a large array use a vanilla for() loop to improve performance
-				addCeleb(celebData);
+		$.getJSON("superheroes.json", function(superheroDataArray) {
+			// Add all superheroes from local data
+			$.each(superheroDataArray, function(idx, superheroData) { // If superheroDataArray is a large array use a vanilla for() loop to improve performance
+				addSuperhero(superheroData);
 			});
 
-			// Create handler for createCeleb()
+			// Create handler for createSuperhero()
 			jqMainForm.submit(onSubmitForm);
 		});
 	}
 
-	function addCeleb(celebData) {
-		// Generate celeb card HTML using underscore's template engine
+	function addSuperhero(superheroData) {
+		// Generate superhero card HTML using underscore's template engine
 		var templateData = {
-			celebData: celebData,
+			superheroData: superheroData,
 			isValidName: isValidName,
 			isValidPhotoUrl: isValidPhotoUrl
 		};
-		var jqCelebCard = $(_.template(celebCardTemplateStr, templateData));
+		var jqSuperheroCard = $(_.template(superheroCardTemplateStr, templateData));
 		// Prepend to grid
-		jqCelebCard.appendTo(jqCelebGrid);
+		jqSuperheroCard.appendTo(jqSuperheroGrid);
 	}
 
 	function onSubmitForm(evt) {
 		// Prevent actual form submission
 		evt.preventDefault();
 		// Assumption here is that Create is the only form submission, otherwise we'd need to look at the evt.target
-		var celebData = {
+		var superheroData = {
 			name: jqFullName.val(),
 			photo_url: jqPhotoURL.val()
 		};
-		addCeleb(celebData);
+		addSuperhero(superheroData);
 	}
 
 	function isValidName(str) {

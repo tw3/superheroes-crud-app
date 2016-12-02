@@ -1,29 +1,29 @@
 (function($, _) {
-	var jqCelebGrid, celebCardTemplateStr;
+	var jqSuperheroGrid, superheroCardTemplateStr;
 
 	function init() {
-		jqCelebGrid = $('.celeb-grid');
-		celebCardTemplateStr = $('#celebCardTemplate').html();
+		jqSuperheroGrid = $('.superhero-grid');
+		superheroCardTemplateStr = $('#superheroCardTemplate').html();
 
 		// Grab superhero data from the JSON file
-		$.getJSON("superheroes.json", function(celebDataArray) {
-			// Add all celebs from local data
-			$.each(celebDataArray, function(idx, celebData) { // If celebDataArray is a large array use a vanilla for() loop to improve performance
-				addCeleb(celebData);
+		$.getJSON("superheroes.json", function(superheroDataArray) {
+			// Add all superheroes from local data
+			$.each(superheroDataArray, function(idx, superheroData) { // If superheroDataArray is a large array use a vanilla for() loop to improve performance
+				addSuperhero(superheroData);
 			});
 		});
 	}
 
-	function addCeleb(celebData) {
-		// Generate celeb card HTML using underscore's template engine
+	function addSuperhero(superheroData) {
+		// Generate superhero card HTML using underscore's template engine
 		var templateData = {
-			celebData: celebData,
+			superheroData: superheroData,
 			isValidName: isValidName,
 			isValidPhotoUrl: isValidPhotoUrl
 		};
-		var jqCelebCard = $(_.template(celebCardTemplateStr, templateData));
+		var jqSuperheroCard = $(_.template(superheroCardTemplateStr, templateData));
 		// Prepend to grid
-		jqCelebCard.appendTo(jqCelebGrid);
+		jqSuperheroCard.appendTo(jqSuperheroGrid);
 	}
 
 	function isValidName(str) {

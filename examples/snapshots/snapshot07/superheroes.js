@@ -1,46 +1,46 @@
 (function($, _) {
-	var jqFullName, jqPhotoURL, jqCelebGrid, celebCardTemplateStr, zeroCelebsTemplateStr;
+	var jqFullName, jqPhotoURL, jqSuperheroGrid, superheroCardTemplateStr, zeroSuperheroesTemplateStr;
 
 	function init() {
 		// Cache stuff
 		var jqMainForm = $('div#main-content > form');
 		jqFullName = $('input[name="name"]', jqMainForm);
 		jqPhotoURL = $('input[name="photo_url"]', jqMainForm);
-		jqCelebGrid = $('.celeb-grid');
-		celebCardTemplateStr = $('#celebCardTemplate').html();
-		zeroCelebsTemplateStr = $('#zeroCelebsTemplate').html();
+		jqSuperheroGrid = $('.superhero-grid');
+		superheroCardTemplateStr = $('#superheroCardTemplate').html();
+		zeroSuperheroesTemplateStr = $('#zeroSuperheroesTemplate').html();
 
 		// Grab superhero data from the JSON file
-		$.getJSON("superheroes.json", function(celebDataArray) {
-			// Add all celebs from local data
-			$.each(celebDataArray, function(idx, celebData) { // If celebDataArray is a large array use a vanilla for() loop to improve performance
-				addCeleb(celebData);
+		$.getJSON("superheroes.json", function(superheroDataArray) {
+			// Add all superheroes from local data
+			$.each(superheroDataArray, function(idx, superheroData) { // If superheroDataArray is a large array use a vanilla for() loop to improve performance
+				addSuperhero(superheroData);
 			});
 
-			// Create handler for createCeleb()
+			// Create handler for createSuperhero()
 			jqMainForm.submit(onSubmitForm);
 
-			handleZeroCelebs();
+			handleZeroSuperheroes();
 		});
 	}
 
-	function addCeleb(celebData) {
-		// Generate celeb card HTML using underscore's template engine
+	function addSuperhero(superheroData) {
+		// Generate superhero card HTML using underscore's template engine
 		var templateData = {
-			celebData: celebData,
+			superheroData: superheroData,
 			isValidName: isValidName,
 			isValidPhotoUrl: isValidPhotoUrl
 		};
-		var jqCelebCard = $(_.template(celebCardTemplateStr, templateData));
-		// Remove zero celebs message and prepend to grid
-		$('.emptyCelebsMessage', jqCelebGrid).remove();
-		jqCelebCard.appendTo(jqCelebGrid);
-		// Add click handler to remove this celeb card
-		$('.celeb-card-close', jqCelebCard).click(function() {
-			// A more common approach is to assign each celeb-card a unique id and use that to remove it
-			$(this).closest('.celeb-card').remove();
-			// Handle zero celebs
-			handleZeroCelebs();
+		var jqSuperheroCard = $(_.template(superheroCardTemplateStr, templateData));
+		// Remove zero superheroes message and prepend to grid
+		$('.emptySuperheroesMessage', jqSuperheroGrid).remove();
+		jqSuperheroCard.appendTo(jqSuperheroGrid);
+		// Add click handler to remove this superhero card
+		$('.superhero-card-close', jqSuperheroCard).click(function() {
+			// A more common approach is to assign each superhero-card a unique id and use that to remove it
+			$(this).closest('.superhero-card').remove();
+			// Handle zero superheroes
+			handleZeroSuperheroes();
 		});
 	}
 
@@ -48,17 +48,17 @@
 		// Prevent actual form submission
 		evt.preventDefault();
 		// Assumption here is that Create is the only form submission, otherwise we'd need to look at the evt.target
-		var celebData = {
+		var superheroData = {
 			name: jqFullName.val(),
 			photo_url: jqPhotoURL.val()
 		};
-		addCeleb(celebData);
+		addSuperhero(superheroData);
 	}
 
-	function handleZeroCelebs() {
-		var numCards = $('.celeb-card', jqCelebGrid).length;
+	function handleZeroSuperheroes() {
+		var numCards = $('.superhero-card', jqSuperheroGrid).length;
 		if (numCards === 0) {
-			jqCelebGrid.html(_.template(zeroCelebsTemplateStr, {}));
+			jqSuperheroGrid.html(_.template(zeroSuperheroesTemplateStr, {}));
 		}
 	}
 

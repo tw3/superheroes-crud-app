@@ -20,31 +20,31 @@
 		<button type="submit">Create</button>
 	</form>
 	<hr>
-	<!-- Superhero list goes here. There is initial data for you in application.js -->
-	<script type="text/html" id="celebCardTemplate">
-		<div class="celeb-card">
-			<div class="celeb-card-inner">
-				<div class="celeb-avatar-area">
-					<% if (isValidPhotoUrl(celebData.photo_url)) { %>
-						<div class="celeb-avatar-thumb" style="background-image: url('<%= celebData.photo_url %>')">
+	<!-- Superhero list goes here -->
+	<script type="text/html" id="superheroCardTemplate">
+		<div class="superhero-card">
+			<div class="superhero-card-inner">
+				<div class="superhero-avatar-area">
+					<% if (isValidPhotoUrl(superheroData.photo_url)) { %>
+						<div class="superhero-avatar-thumb" style="background-image: url('<%= superheroData.photo_url %>')">
 					<% } else { %>
-						<div class="celeb-avatar-thumb">
+						<div class="superhero-avatar-thumb">
 					<% } %>
 				</div>
 				</div>
-				<div class="celeb-info-area">
-					<div class="celeb-info-name">
-						<% if (isValidName(celebData.name)) { %>
-							<%= celebData.name %>
+				<div class="superhero-info-area">
+					<div class="superhero-info-name">
+						<% if (isValidName(superheroData.name)) { %>
+							<%= superheroData.name %>
 						<% } %>
 					</div>
 				</div>
 			</div>
-			<div class="celeb-card-close"></div>
+			<div class="superhero-card-close"></div>
 		</div>
 	</script>
 
-	<div class="celeb-grid"></div>
+	<div class="superhero-grid"></div>
 
 </div>
 </body>
