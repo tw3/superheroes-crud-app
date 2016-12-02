@@ -1,0 +1,87 @@
+[
+	{
+		"name": "snapshot01",
+		"number": 1,
+		"message": "Initial page with no cards",
+		"files": [
+			"index.html",
+			"superheroes.css"
+		],
+		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot01",
+		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot01"
+	},
+	{
+		"name": "snapshot02",
+		"number": 2,
+		"message": "Show a single hardcoded superhero within a 3 column grid, support scrollable text",
+		"files": [
+			"index.html",
+			"superheroes.css"
+		],
+		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
+		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+	},
+	{
+		"name": "snapshot03",
+		"number": 3,
+		"message": "Show a single superhero dynamically using jQuery and underscore",
+		"files": [
+			"index.html",
+			"superheroes.js",
+			"superheroes.css"
+		],
+		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
+		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+	},
+	{
+		"name": "snapshot04",
+		"number": 4,
+		"message": "Show all superheroes dynamically using jQuery and underscore",
+		"files": [
+			"index.html",
+			"superheroes.js",
+			"superheroes.css"
+		],
+		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
+		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+	},
+	{
+		"name": "snapshot05",
+		"number": 5,
+		"message": "Load superhero data asynchronously from a JSON file using jQuery and display",
+		"files": [
+			"index.html",
+			"superheroes.js",
+			"superheroes.json",
+			"superheroes.css"
+		],
+		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
+		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+	},
+	{
+		"name": "snapshot06",
+		"number": 6,
+		"message": "Add support for create superhero",
+		"files": [
+			"index.html",
+			"superheroes.js",
+			"superheroes.json",
+			"superheroes.css"
+		],
+		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
+		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+	},
+	{
+		"name": "snapshot07",
+		"number": 7,
+		"message": "Add support for remove superhero",
+		"files": [
+			"index.html",
+			"superheroes.js",
+			"superheroes.json",
+			"superheroes.css"
+		],
+		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
+		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+	}
+]

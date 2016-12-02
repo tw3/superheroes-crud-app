@@ -1,0 +1,1 @@
+Show a single hardcoded superhero within a 3 column grid, support scrollable text
