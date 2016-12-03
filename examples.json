@@ -6,9 +6,7 @@
 		"files": [
 			"index.html",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot01",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot01"
+		]
 	},
 	{
 		"name": "snapshot02",
@@ -17,9 +15,7 @@
 		"files": [
 			"index.html",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	},
 	{
 		"name": "snapshot03",
@@ -29,9 +25,7 @@
 			"index.html",
 			"superheroes.js",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	},
 	{
 		"name": "snapshot04",
@@ -41,9 +35,7 @@
 			"index.html",
 			"superheroes.js",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	},
 	{
 		"name": "snapshot05",
@@ -54,9 +46,7 @@
 			"superheroes.js",
 			"superheroes.json",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	},
 	{
 		"name": "snapshot06",
@@ -67,9 +57,7 @@
 			"superheroes.js",
 			"superheroes.json",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	},
 	{
 		"name": "snapshot07",
@@ -80,9 +68,7 @@
 			"superheroes.js",
 			"superheroes.json",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	},
 	{
 		"name": "snapshot08",
@@ -92,9 +78,7 @@
 			"index.html",
 			"superheroes.js",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	},
 	{
 		"name": "snapshot09",
@@ -104,9 +88,7 @@
 			"index.html",
 			"superheroes.js",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	},
 	{
 		"name": "snapshot10",
@@ -117,9 +99,7 @@
 			"superheroes.js",
 			"superheroes.json",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	},
 	{
 		"name": "snapshot11",
@@ -130,9 +110,7 @@
 			"superheroes.js",
 			"superheroes.json",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	},
 	{
 		"name": "snapshot12",
@@ -143,8 +121,6 @@
 			"superheroes.js",
 			"superheroes.json",
 			"superheroes.css"
-		],
-		"url": "https://github.com/tw3/superheroes-crud-app/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-		"runUrl": "https://github.com/tw3/superheroes-crud-app/introToAngular/examples/snapshots/snapshot02"
+		]
 	}
 ]
