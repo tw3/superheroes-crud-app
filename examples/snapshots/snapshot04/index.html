@@ -26,11 +26,10 @@
 			<div class="superhero-card-inner">
 				<div class="superhero-avatar-area">
 					<% if (isValidPhotoUrl(superheroData.photo_url)) { %>
-						<div class="superhero-avatar-thumb" style="background-image: url('<%= superheroData.photo_url %>')">
+						<div class="superhero-avatar-thumb" style="background-image: url('<%= superheroData.photo_url %>')"></div>
 					<% } else { %>
-						<div class="superhero-avatar-thumb">
+						<div class="superhero-avatar-thumb"></div>
 					<% } %>
-				</div>
 				</div>
 				<div class="superhero-info-area">
 					<div class="superhero-info-name">
