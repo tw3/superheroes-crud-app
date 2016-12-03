@@ -122,5 +122,20 @@
 			"superheroes.json",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot13",
+		"number": 13,
+		"message": "Organize AngularJS files",
+		"files": [
+			"index.html",
+			"superheroes.js",
+			"superheroesFactory.js",
+			"superheroControllers.js",
+			"superheroGridDirective.js",
+			"superhero-grid.html",
+			"superheroes.json",
+			"superheroes.css"
+		]
 	}
 ]
