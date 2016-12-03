@@ -11,12 +11,12 @@
 </head>
 <body ng-controller="SuperheroesCtrl">
 	<div id="main-content">
-		<form>
+		<form ng-submit="createSuperhero()">
 			<div>
-				<label>Name</label> <input name="name" type="text">
+				<label>Name</label> <input name="name" type="text" ng-model="newName">
 			</div>
 			<div>
-				<label>Photo URL</label> <input name="photo_url">
+				<label>Photo URL</label> <input name="photo_url" type="text" ng-model="newPhotoUrl">
 			</div>
 			<button type="submit">Create</button>
 		</form>
@@ -28,13 +28,12 @@
 
 			<div class="superhero-card" ng-repeat="superheroData in superheroDataArray">
 				<div class="superhero-card-inner">
-					<div class="superhero-avatar-area">
-						<div class="superhero-avatar-thumb" ng-style="{ 'background-image' : 'url('+superheroData.photo_url+')' }"></div>
+					<div class="superhero-avatar-area" ng-switch on="isValidUrl(superheroData.photo_url)">
+						<div ng-switch-when="true" class="superhero-avatar-thumb" ng-style="{ 'background-image' : 'url('+superheroData.photo_url+')' }"></div>
+						<div ng-switch-default="" class="superhero-avatar-thumb"></div>
 					</div>
 					<div class="superhero-info-area">
-						<div class="superhero-info-name">
-							{{ superheroData.name }}
-						</div>
+						<div class="superhero-info-name" ng-if="isValidName(superheroData.name)">{{ superheroData.name }}</div>
 					</div>
 				</div>
 				<div class="superhero-card-close"></div>
