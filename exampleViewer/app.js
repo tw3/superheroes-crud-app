@@ -118,6 +118,7 @@ app.directive('file', function(){
       var ext = scope.file.split('.').pop();
       var extModeMapping = {
         "js": "text/typescript",
+        "jsx": "text/jsx",
         "json": "text/typescript",
         "css": "text/css",
         "default": "text/html"
