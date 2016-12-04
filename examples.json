@@ -137,5 +137,14 @@
 			"superheroes.json",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot14",
+		"number": 14,
+		"message": "Show a single hardcoded superhero with ReactJS",
+		"files": [
+			"index.html",
+			"superheroes.css"
+		]
 	}
 ]
