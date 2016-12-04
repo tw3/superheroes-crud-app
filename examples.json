@@ -146,5 +146,14 @@
 			"index.html",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot15",
+		"number": 15,
+		"message": "Show a single superhero dynamically using ReactJS",
+		"files": [
+			"index.html",
+			"superheroes.css"
+		]
 	}
 ]

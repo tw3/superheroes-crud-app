@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="superheroes.css" rel="stylesheet">
+	<script src="../../../js/vendor/jquery.min.js" type="text/javascript"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react-dom.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+
+	<title></title>
+</head>
+<body>
+<div id="main-content">
+	<form>
+		<div>
+			<label>Name</label> <input name="name" type="text">
+		</div>
+		<div>
+			<label>Photo URL</label> <input name="photo_url">
+		</div>
+		<button type="submit">Create</button>
+	</form>
+
+	<hr>
+
+	<!-- Superhero list goes here -->
+	<div id="superhero-grid" class="superhero-grid"></div>
+
+	<script type="text/jsx" id="superheroCardTemplate">
+		var SuperheroCard = React.createClass({
+			render: function() {
+				return (
+						<div className="superhero-card">
+							<div className="superhero-card-inner">
+								<div className="superhero-avatar-area">
+									<div className="superhero-avatar-thumb" style={{ backgroundImage: "url('"+this.props.superheroPhotoUrl+"')" }}></div>
+								</div>
+								<div className="superhero-info-area">
+									<div className="superhero-info-name">
+										{ this.props.superheroName }
+									</div>
+								</div>
+							</div>
+							<div className="superhero-card-close"></div>
+						</div>
+				);
+			}
+		});
+
+		ReactDOM.render(<SuperheroCard superheroName="Batman" superheroPhotoUrl="../../../images/avatars/batman.jpg" />, document.getElementById("superhero-grid"));
+	</script>
+
+</div>
+</body>
+</html>
