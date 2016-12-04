@@ -144,6 +144,7 @@
 		"message": "Show a single hardcoded superhero with ReactJS",
 		"files": [
 			"index.html",
+			"superheroes.jsx",
 			"superheroes.css"
 		]
 	},
@@ -153,6 +154,7 @@
 		"message": "Show a single superhero dynamically using ReactJS",
 		"files": [
 			"index.html",
+			"superheroes.jsx",
 			"superheroes.css"
 		]
 	},
@@ -162,6 +164,7 @@
 		"message": "Show all superheroes dynamically using ReactJS",
 		"files": [
 			"index.html",
+			"superheroes.jsx",
 			"superheroes.css"
 		]
 	}
