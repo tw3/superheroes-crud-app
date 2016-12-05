@@ -167,5 +167,16 @@
 			"superheroes.jsx",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot17",
+		"number": 17,
+		"message": "Load superhero data asynchronously from a JSON file using XmlHttpRequest",
+		"files": [
+			"index.html",
+			"superheroes.jsx",
+			"superheroes.css"
+		]
 	}
 ]
+
