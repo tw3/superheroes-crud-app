@@ -187,5 +187,15 @@
 			"superheroes.jsx",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot19",
+		"number": 19,
+		"message": "Add ReactJS support for remove superhero",
+		"files": [
+			"index.html",
+			"superheroes.jsx",
+			"superheroes.css"
+		]
 	}
 ]
