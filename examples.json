@@ -177,6 +177,15 @@
 			"superheroes.jsx",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot18",
+		"number": 18,
+		"message": "Add ReactJS support for create superhero",
+		"files": [
+			"index.html",
+			"superheroes.jsx",
+			"superheroes.css"
+		]
 	}
 ]
-
