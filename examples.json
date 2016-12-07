@@ -229,5 +229,16 @@
 			"superheroes.json",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot23",
+		"number": 23,
+		"message": "Add KnockoutJS support for remove superhero",
+		"files": [
+			"index.html",
+			"superheroes.js",
+			"superheroes.json",
+			"superheroes.css"
+		]
 	}
 ]
