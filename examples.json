@@ -207,5 +207,16 @@
 			"superheroes.js",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot21",
+		"number": 21,
+		"message": "Show all superheroes dynamically from a JSON file using KnockoutJS and jQuery",
+		"files": [
+			"index.html",
+			"superheroes.js",
+			"superheroes.json",
+			"superheroes.css"
+		]
 	}
 ]
