@@ -240,5 +240,17 @@
 			"superheroes.json",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot24",
+		"number": 24,
+		"message": "Load KnockoutJS app using RequireJS",
+		"files": [
+			"index.html",
+			"js/app.js",
+			"js/app/main.js",
+			"superheroes.json",
+			"superheroes.css"
+		]
 	}
 ]
