@@ -197,5 +197,15 @@
 			"superheroes.jsx",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot20",
+		"number": 20,
+		"message": "Show a single superhero dynamically using KnockoutJS and jQuery",
+		"files": [
+			"index.html",
+			"superheroes.js",
+			"superheroes.css"
+		]
 	}
 ]
