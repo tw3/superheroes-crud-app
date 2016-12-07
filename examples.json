@@ -218,5 +218,16 @@
 			"superheroes.json",
 			"superheroes.css"
 		]
+	},
+	{
+		"name": "snapshot22",
+		"number": 22,
+		"message": "Add KnockoutJS support for create superhero",
+		"files": [
+			"index.html",
+			"superheroes.js",
+			"superheroes.json",
+			"superheroes.css"
+		]
 	}
 ]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="superheroes.css" rel="stylesheet">
+	<script src="../../../js/vendor/jquery.min.js" type="text/javascript"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-debug.js"></script>
+	<script src="superheroes.js" type="text/javascript"></script>
+
+	<title></title>
+</head>
+<body>
+<div id="main-content">
+	<form data-bind="submit: createSuperhero">
+		<div>
+			<label>Name</label> <input name="name" type="text" data-bind="value: newSuperheroName">
+		</div>
+		<div>
+			<label>Photo URL</label> <input name="photo_url" data-bind="value: newSuperheroPhotoUrl">
+		</div>
+		<button type="submit">Create</button>
+	</form>
+	<hr>
+	<!-- Superhero list goes here -->
+
+	<div class="superhero-grid" data-bind="foreach: superheroCardModels">
+
+		<div class="superhero-card">
+			<div class="superhero-card-inner">
+				<div class="superhero-avatar-area">
+					<!-- ko if: isValidPhotoUrl() -->
+					<div class="superhero-avatar-thumb" data-bind="style: { backgroundImage: 'url(\'' + photoUrl + '\')' }"></div>
+					<!-- /ko -->
+					<!-- ko ifnot: isValidPhotoUrl() -->
+					<div class="superhero-avatar-thumb"></div>
+					<!-- /ko -->
+				</div>
+				<div class="superhero-info-area">
+					<!-- ko if: isValidName() -->
+					<div class="superhero-info-name" data-bind="text: name"></div>
+					<!-- /ko -->
+					<!-- ko ifnot: isValidName() -->
+					<div class="superhero-info-name"></div>
+					<!-- /ko -->
+				</div>
+			</div>
+			<div class="superhero-card-close"></div>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>
