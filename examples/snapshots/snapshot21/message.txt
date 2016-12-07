@@ -1,0 +1,1 @@
+Page with a single hardcoded superhero, scrollable text supported

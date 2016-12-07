@@ -1,5 +1,5 @@
 // Initial data
-superheroDataArray = [
+var superheroDataArray = [
 	{ "name": "Superman", "photo_url": "../../../images/avatars/superman.jpg" },
 	{ "name": "Batman", "photo_url": "../../../images/avatars/batman.jpg" },
 	{ "name": "Batgirl", "photo_url": "../../../images/avatars/batgirl.jpg" },
